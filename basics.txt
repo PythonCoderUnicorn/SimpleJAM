@@ -1,0 +1,41 @@
+Static Markup: HTML CSS JavaScript
+API : our own or 3rd party.  JS talks to the API
+
+what is req's JAM:
+    site markup is rendered before or during deployment
+    the entire code base must live on Git
+
+    NOT JAM: code rendered at run time on server (word press, drupal, nuxt etc)
+
+BEST PRACTICES:
+    static assets, CDN hosting, atomic deploys, cache invalidation
+
+
+serve entire app/website from content delivery network (GitHub pages)
+auto atomic deploys 
+auto cache invalidation
+
+step 1.
+# GETTING STARTED ON BASIC WEBSITE :
+in terminal: 
+    mkdir <folder name>
+    touch index.html 
+    touch style.css 
+    touch README.md 
+
+open html file, enter basic html elements, link css file 
+
+step 2.
+# Git or GitHub. make new repo
+
+terminal:
+    git init
+    git add .  
+    git commit -m "Initial commit"
+    <past in the remote source link from GitHub repo >
+    git push -u origin master
+
+step 3.
+# now deploy to host. GitHub Pages. 
+GitHub settings > scroll down to GitHub Pages > IF just simple static website, then select master branch otherwise select master branch/docs folder {used for static site generators}
+> hit Save > scroll back down to Pages section and see a link (takes a few minutes)
